@@ -23,12 +23,10 @@ def parse_ip_address(ip: str) -> tuple[int, int, int, int]:
 
 def calculate_ip_range(x1: int, x2: int, x3: int, x4: int) -> int:
     # Formula!
-    range = x4 + \
-          + x3 * 256 \
-          + x2 * 256 * 256 \
-          + x1 * 256 * 256 * 256
-
-    return range
+    return x4 + \
+         + x3 * 256 \
+         + x2 * 256 * 256 \
+         + x1 * 256 * 256 * 256
 
 
 res1 = ips_between('0.0.0.0', '0.0.1.0')
