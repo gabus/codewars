@@ -10,7 +10,7 @@ def bmi_calculator():
 
     # weight - kg, height - m
     kmi = round(weight / height ** 2)
-  
+
     if kmi < 18.5:
         return 'Underweight'
     elif 18.5 <= kmi < 25:
